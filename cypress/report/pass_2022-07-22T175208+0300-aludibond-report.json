@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-07-22T11:49:02.485Z",
-    "end": "2022-07-22T11:50:05.248Z",
-    "duration": 62763,
+    "start": "2022-07-22T14:51:11.230Z",
+    "end": "2022-07-22T14:52:08.395Z",
+    "duration": 57165,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "b00f64d4-2b8c-4b8b-a544-e0aacb1023f1",
+      "uuid": "cb383488-c03e-4228-b335-2ee0784e4340",
       "title": "",
-      "fullFile": "cypress\\e2e\\aludibond.spec.js",
-      "file": "cypress\\e2e\\aludibond.spec.js",
+      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\aludibond.spec.js",
+      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\aludibond.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "e89ebc92-1132-4019-905e-e39add4b4368",
+          "uuid": "03007784-ccab-4438-8755-934b81edd1c3",
           "title": "Test on mf aludibond",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Full user purchase journey with a AluDibond Product",
               "fullTitle": "Test on mf aludibond Full user purchase journey with a AluDibond Product",
               "timedOut": null,
-              "duration": 60063,
+              "duration": 54767,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// 1 The user on the aludibond LP page, accepts cokkies and uplaod an image\n_aludibondLP.onAludibondLP.userOnAludibondLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n// onCofirmOrderPage.userClicksOnTheBuyButton()",
               "err": {},
-              "uuid": "ba855eed-155a-48b2-8d16-b90a3d941abf",
-              "parentUUID": "e89ebc92-1132-4019-905e-e39add4b4368",
+              "uuid": "ca319a0e-3741-4abe-9134-81c9c39b3985",
+              "parentUUID": "03007784-ccab-4438-8755-934b81edd1c3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ba855eed-155a-48b2-8d16-b90a3d941abf"
+            "ca319a0e-3741-4abe-9134-81c9c39b3985"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 60063,
+          "duration": 54767,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -100,7 +100,9 @@
         "json": true,
         "reportDir": "cypress/report",
         "reportPageTitle": "Mf automation Report",
-        "reportFilename": "[status]_[datetime]-[name]-report"
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
       },
       "version": "6.2.0"
     }

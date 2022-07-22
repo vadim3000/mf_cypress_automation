@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-07-22T11:51:31.292Z",
-    "end": "2022-07-22T11:51:41.647Z",
-    "duration": 10355,
+    "start": "2022-07-22T14:49:41.392Z",
+    "end": "2022-07-22T14:49:51.643Z",
+    "duration": 10251,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "79d58956-b53a-425a-b7e9-1fc786d00243",
+      "uuid": "21e120c0-747e-44a8-a695-5375167282ca",
       "title": "",
       "fullFile": "cypress\\e2e\\mf purchase\\canvasLP.spec.js",
       "file": "cypress\\e2e\\mf purchase\\canvasLP.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2d5ba163-9b1f-4e67-8933-2f2330abaddc",
+          "uuid": "43b23d7a-6946-4b3f-bf93-fcf55d96ad82",
           "title": "Test on Canvas LP page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "The user on the canvas LP page, accepts cookies",
               "fullTitle": "Test on Canvas LP page The user on the canvas LP page, accepts cookies",
               "timedOut": null,
-              "duration": 8583,
+              "duration": 8187,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// 1 The user on the canvas LP page, accepts cokkies\ncy.visit('https://www.meinfoto.de/foto-in-gross/foto-auf-leinwand.jsf');\ncy.wait(500);\ncy.xpath(\"//span[contains(text(),'Alle akzeptieren')]\").click();\ncy.wait(500);",
               "err": {},
-              "uuid": "cffb2eeb-5417-405d-8eb7-b73833d70f74",
-              "parentUUID": "2d5ba163-9b1f-4e67-8933-2f2330abaddc",
+              "uuid": "f0acf538-52f5-43b0-be4b-6befc47c870f",
+              "parentUUID": "43b23d7a-6946-4b3f-bf93-fcf55d96ad82",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cffb2eeb-5417-405d-8eb7-b73833d70f74"
+            "f0acf538-52f5-43b0-be4b-6befc47c870f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8583,
+          "duration": 8187,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -100,7 +100,9 @@
         "json": true,
         "reportDir": "cypress/report",
         "reportPageTitle": "Mf automation Report",
-        "reportFilename": "[status]_[datetime]-[name]-report"
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
       },
       "version": "6.2.0"
     }

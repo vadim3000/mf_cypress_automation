@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2022-07-22T11:51:46.062Z",
-    "end": "2022-07-22T11:51:50.254Z",
-    "duration": 4192,
+    "start": "2022-07-22T14:49:56.218Z",
+    "end": "2022-07-22T14:50:00.402Z",
+    "duration": 4184,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ba77719a-e7e8-4341-bf9d-c838881a1f9c",
+      "uuid": "0df8c631-7906-4f39-b3cb-75645fcfac29",
       "title": "",
       "fullFile": "cypress\\e2e\\mf purchase\\configuratorPage.spec.js",
       "file": "cypress\\e2e\\mf purchase\\configuratorPage.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "839dd7a1-5c58-4c9a-87fc-d5019b21b071",
+          "uuid": "cd03d728-26f1-4a7d-b2a6-efcb19c82521",
           "title": "Test on configurator page",
           "fullFile": "",
           "file": "",
@@ -38,21 +38,21 @@
               "title": "The user uploads an image",
               "fullTitle": "Test on configurator page The user uploads an image",
               "timedOut": null,
-              "duration": 4138,
+              "duration": 4135,
               "state": "failed",
               "speed": null,
               "pass": false,
               "fail": true,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\mf purchase\\\\configuratorPage.spec.js\\\\Test on configurator page -- The user uploads an image (failed).png\"\n      }\n    ]\n  ]\n}",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\configuratorPage.spec.js\\\\Test on configurator page -- The user uploads an image (failed).png\"\n      }\n    ]\n  ]\n}",
               "code": "cy.xpath('//div[@class=\"upload-button\"]//input[@type=\"file\"]').attachFile(\"test_image_1.jpg\");\ncy.wait(2000);",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.\n    at Context.eval (http://localhost:49845/__cypress/tests?p=cypress\\e2e\\mf%20purchase\\configuratorPage.spec.js:103:8)",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.\n    at Context.eval (http://localhost:50850/__cypress/tests?p=cypress\\e2e\\mf%20purchase\\configuratorPage.spec.js:103:8)",
                 "diff": null
               },
-              "uuid": "d4814f4b-a53d-490f-896e-867f1a5dc6ef",
-              "parentUUID": "839dd7a1-5c58-4c9a-87fc-d5019b21b071",
+              "uuid": "4657ad7a-b8d4-41d0-9f8b-e3be927b3ef4",
+              "parentUUID": "cd03d728-26f1-4a7d-b2a6-efcb19c82521",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "d4814f4b-a53d-490f-896e-867f1a5dc6ef"
+            "4657ad7a-b8d4-41d0-9f8b-e3be927b3ef4"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 4138,
+          "duration": 4135,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -104,7 +104,9 @@
         "json": true,
         "reportDir": "cypress/report",
         "reportPageTitle": "Mf automation Report",
-        "reportFilename": "[status]_[datetime]-[name]-report"
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
       },
       "version": "6.2.0"
     }

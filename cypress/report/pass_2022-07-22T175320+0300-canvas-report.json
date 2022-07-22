@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2022-07-21T08:32:40.591Z",
-    "end": "2022-07-21T08:32:52.617Z",
-    "duration": 12026,
+    "failures": 0,
+    "start": "2022-07-22T14:52:19.751Z",
+    "end": "2022-07-22T14:53:20.942Z",
+    "duration": 61191,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "8ba28277-d751-46b3-9604-82a6ff43bd46",
+      "uuid": "22301178-376d-4c17-807a-6c7fc5eb78e5",
       "title": "",
-      "fullFile": "cypress\\e2e\\canvas.spec.js",
-      "file": "cypress\\e2e\\canvas.spec.js",
+      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\canvas.spec.js",
+      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\canvas.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "8e17cdb0-6d28-4290-a3ff-11cd308359cf",
+          "uuid": "53bd7da6-8e69-4ebf-b0f9-2d28aa8a6b16",
           "title": "Test on mf canvas",
           "fullFile": "",
           "file": "",
@@ -38,33 +38,29 @@
               "title": "Full user purchase journey with a Canvas Product",
               "fullTitle": "Test on mf canvas Full user purchase journey with a Canvas Product",
               "timedOut": null,
-              "duration": 10163,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 58374,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\canvas.spec.js\\\\Test on mf canvas -- Full user purchase journey with a Canvas Product (failed).png\"\n      }\n    ]\n  ]\n}",
+              "context": null,
               "code": "// 1 The user on the canvas LP page, accepts cokkies and uplaod an image\n_canvasLP.onCanvasLp.userOnCanvasLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n// onCofirmOrderPage.userClicksOnTheBuyButton()",
-              "err": {
-                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > $ is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
-                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > $ is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <anonymous>:2:53\n    at Array.forEach (<anonymous>)\n    at <anonymous>:2:3\n    at <anonymous>:2:192\n    at https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:439:414\n    at b (https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:440:337)\n    at https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:440:359\n    at i (https://www.meinfoto.de/foto-in-gross/foto-auf-leinwand.jsf:2:1488)\n    at https://www.meinfoto.de/foto-in-gross/foto-auf-leinwand.jsf:2:1861",
-                "diff": null
-              },
-              "uuid": "23998cb6-7148-404f-84a5-fc41d86822c7",
-              "parentUUID": "8e17cdb0-6d28-4290-a3ff-11cd308359cf",
+              "err": {},
+              "uuid": "b928b624-b89b-4b53-b730-353572d500d8",
+              "parentUUID": "53bd7da6-8e69-4ebf-b0f9-2d28aa8a6b16",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "23998cb6-7148-404f-84a5-fc41d86822c7"
+          "passes": [
+            "b928b624-b89b-4b53-b730-353572d500d8"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10163,
+          "duration": 58374,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -104,7 +100,9 @@
         "json": true,
         "reportDir": "cypress/report",
         "reportPageTitle": "Mf automation Report",
-        "reportFilename": "[status]_[datetime]-[name]-report"
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
       },
       "version": "6.2.0"
     }

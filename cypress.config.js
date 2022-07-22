@@ -25,9 +25,8 @@ module.exports = defineConfig({
     reportDir:"cypress/report",
     reportPageTitle: "Mf automation Report",
     reportFilename: "[status]_[datetime]-[name]-report",
-    // reportPageTitle: 'custom-title',
-    // embeddedScreenshots: true,
-    // inlineAssets: true,
+    embeddedScreenshots: true,
+    inlineAssets: true,
     // saveAllAttempts: false,
   },
 
