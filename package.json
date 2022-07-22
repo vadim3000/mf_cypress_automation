@@ -4,6 +4,8 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
+    "build": "rollup-c",
+    "start": "http-server",
     "pretest": "rimraf -r ./cypress/report/*.json",
     "test": "npx cypress run || npm run posttest",
     "posttest": "npm run merge-reports && npm run generate-htmlreport",

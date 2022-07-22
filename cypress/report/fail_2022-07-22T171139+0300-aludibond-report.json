@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-07-22T14:11:35.614Z",
+    "end": "2022-07-22T14:11:39.126Z",
+    "duration": 3512,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e5493e8-7b12-45cd-8174-602817677da9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\aludibond.spec.js",
+      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\aludibond.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4fed6c1b-1adc-4de1-9213-40be51f0852e",
+          "title": "Test on mf aludibond",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Full user purchase journey with a AluDibond Product",
+              "fullTitle": "Test on mf aludibond Full user purchase journey with a AluDibond Product",
+              "timedOut": null,
+              "duration": 1573,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\products-end-to-end\\\\aludibond.spec.js\\\\Test on mf aludibond -- Full user purchase journey with a AluDibond Product (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "// 1 The user on the aludibond LP page, accepts cokkies and uplaod an image\n_aludibondLP.onAludibondLP.userOnAludibondLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n// onCofirmOrderPage.userClicksOnTheBuyButton()",
+              "err": {
+                "message": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > $ is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "ReferenceError: The following error originated from your application code, not from Cypress.\n\n  > $ is not defined\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at <anonymous>:2:53\n    at Array.forEach (<anonymous>)\n    at <anonymous>:2:3\n    at <anonymous>:2:192\n    at https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:431:414\n    at b (https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:432:337)\n    at pe (https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:112:769)\n    at e (https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:244:34)\n    at https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:61:130\n    at Array.<anonymous> (https://t.meinfoto.de/gtm.js?id=GTM-PN5S5F:245:454)",
+                "diff": null
+              },
+              "uuid": "23b8fd9e-ebba-4225-87f9-652bc3a1a9ac",
+              "parentUUID": "4fed6c1b-1adc-4de1-9213-40be51f0852e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "23b8fd9e-ebba-4225-87f9-652bc3a1a9ac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1573,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report",
+        "reportPageTitle": "Mf automation Report",
+        "reportFilename": "[status]_[datetime]-[name]-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
