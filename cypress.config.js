@@ -1,5 +1,6 @@
 const { defineConfig } = require("cypress");
 
+// import rollupPreprocessor from 'cypress-rollup-preprocessor'
 
 module.exports = defineConfig({
 
@@ -34,6 +35,7 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
+      // on('file:preprocessor', rollupPreprocessor())
 
     },
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
