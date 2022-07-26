@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-26T07:17:14.527Z",
+    "end": "2022-07-26T07:18:35.140Z",
+    "duration": 80613,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0901638e-0a1e-4be9-8d9b-b446643974a7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\acrilic.spec.js",
+      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\acrilic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d62d8a0c-c89b-4ae5-b2cf-d49fbfaed6dd",
+          "title": "Test on mf acrilic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Full user purchase journey with a Acrilic Product",
+              "fullTitle": "Test on mf acrilic Full user purchase journey with a Acrilic Product",
+              "timedOut": null,
+              "duration": 76736,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// // 1 The user on the canvas LP page, accepts cokkies and uploads an image\n_acrilicLP.onAcrilicLP.userOnAcrilicLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // 8 The user on the confirmorder page and clicks, on the But Button\n// onCofirmOrderPage.userClicksOnTheBuyButton()",
+              "err": {},
+              "uuid": "d16c3eb8-9f89-4e03-a29d-f2f0a8b522ee",
+              "parentUUID": "d62d8a0c-c89b-4ae5-b2cf-d49fbfaed6dd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d16c3eb8-9f89-4e03-a29d-f2f0a8b522ee"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 76736,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report",
+        "reportPageTitle": "Mf automation Report",
+        "reportFilename": "[status]_[datetime]-[name]-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

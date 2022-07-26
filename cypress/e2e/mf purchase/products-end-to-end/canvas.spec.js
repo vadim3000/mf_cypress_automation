@@ -22,11 +22,15 @@ describe('Test on mf canvas', () =>  {
 
     it('Full user purchase journey with a Canvas Product', () => {
 
-        // 1 The user on the canvas LP page, accepts cokkies and uplaod an image
-        onCanvasLp.userOnCanvasLPAccreptsThecokkies()
 
-        //2 The userUpload an Image
-        onUploadImage.userUploadsAnImage()
+        context("1 step", ()=>{
+            // 1 The user on the canvas LP page, accepts cokkies and uplaod an image
+            onCanvasLp.userOnCanvasLPAccreptsThecokkies()
+
+            //2 The userUpload an Image
+            onUploadImage.userUploadsAnImage()
+        })
+
 
         // 3 The user uploads an image
         onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage()

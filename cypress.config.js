@@ -3,6 +3,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
 
+  projectId: "jbgiu1",
   viewportHeight: 1080,
   viewportWidth: 1920,
   blockHosts: [
@@ -39,5 +40,6 @@ module.exports = defineConfig({
     excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*'],
 
   },
+
 
 });

@@ -1,9 +1,9 @@
 
 
-
 # dependencies
 /node_modules
+/videos
 
 # IDEs and editors
-.settings/
 /.idea
+
