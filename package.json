@@ -7,7 +7,7 @@
     "build": "rollup-c",
     "start": "http-server",
     "pretest": "rimraf -r ./cypress/report/*.json",
-    "test": "npx cypress run || npm run posttest",
+    "testus": "npx cypress run || npm run posttest",
     "posttest": "npm run merge-reports && npm run generate-htmlreport",
     "sayHello": "echo Hello World ...!",
     "merge-reports": "mochawesome-merge ./cypress/report/*.json > ./report1.json",
@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "cypress": "^10.3.1",
+    "npm-run-all": "^4.1.5",
     "start-server-and-test": "^1.14.0"
   }
 }
