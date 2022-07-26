@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: MF Cypress Tests
 
 on: [push]
 
@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Cypress.io
-        uses: cypress-io/github-action@v4.1.1  
+        uses: actions/checkout@v2
         
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
