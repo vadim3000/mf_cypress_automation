@@ -4,7 +4,7 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
-    "build": "rollup-c",
+    "build": "rollup",
     "start": "http-server",
     "pretest": "rimraf -r ./cypress/report/*.json",
     "testus": "npx cypress run || npm run posttest",
