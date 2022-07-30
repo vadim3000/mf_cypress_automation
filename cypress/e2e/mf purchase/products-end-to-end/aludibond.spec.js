@@ -44,6 +44,6 @@ describe('Test on mf aludibond', () =>  {
         onPaymentMethodPage.userAddCreditCardCredentials()
 
         // // 8 The user on the confirmorder page and clicks, on the But Button
-        // onCofirmOrderPage.userClicksOnTheBuyButton()
+        onCofirmOrderPage.userClicksOnTheBuyButton()
     })
 })
