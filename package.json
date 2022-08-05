@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "cypress.config.js",
+  "baseUrl": "http://localhost:3000",
   "scripts": {
     "build": "rollup-c",
-    "start": "http-server --headless",
+    "cypress-run": "cypress run",
+    "start": "http-server-and-test next baseUrl cypress-run",
     "cy:run": "cypress run --browser chrome",
     "pretest": "rimraf -r ./cypress/report/*.json",
     "test": "npx cypress run || npm run posttest",
