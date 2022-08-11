@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 // import rollupPreprocessor from 'cypress-rollup-preprocessor'
 
+
 module.exports = defineConfig({
 
   projectId: "jbgiu1",
@@ -37,10 +38,23 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
       // on('file:preprocessor', rollupPreprocessor())
 
-    },
-    specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
-    excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*'],
+      const cucumber = require('cypress-cucumber-preprocessor').default
 
+      module.exports = (on, config) => {
+        on('file:preprocessor', cucumber())
+      }
+
+      const webpackPreprocessor = require('@cypress/webpack-preprocessor')
+
+      module.exports = (on) => {
+        on('file:preprocessor', webpackPreprocessor())
+      }
+
+
+
+    },
+    specPattern: ['cypress/e2e/**/*.{js,jsx,ts,tsx,feature}'],
+    excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*'],
   },
 
 
