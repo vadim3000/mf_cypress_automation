@@ -44,14 +44,24 @@ module.exports = defineConfig({
         on('file:preprocessor', cucumber())
       }
 
+      // const webpackPreprocessor = require('@cypress/webpack-preprocessor')
+
+      // module.exports = (on) => {
+      //   on('file:preprocessor', webpackPreprocessor())
+      // }
+
       const webpackPreprocessor = require('@cypress/webpack-preprocessor')
 
       module.exports = (on) => {
-        on('file:preprocessor', webpackPreprocessor())
+        const options = {
+          // send in the options from your webpack.config.js, so it works the same
+          // as your app's code
+          webpackOptions: require('../../webpack.config'),
+          watchOptions: {},
+        }
+
+        on('file:preprocessor', webpackPreprocessor(options))
       }
-
-
-
     },
     specPattern: ['cypress/e2e/**/*.{js,jsx,ts,tsx,feature}'],
     excludeSpecPattern: ['**/1-getting-started/*', '**/2-advanced-examples/*'],
