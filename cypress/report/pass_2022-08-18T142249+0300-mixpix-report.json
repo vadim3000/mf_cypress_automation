@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-18T11:21:26.504Z",
+    "end": "2022-08-18T11:22:49.871Z",
+    "duration": 83367,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "03bb8a12-9ea2-43a0-8776-d87f02d3a595",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\mixpix.spec.js",
+      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\mixpix.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "af3aca52-23f1-466a-b335-47ca5f4a4aaa",
+          "title": "Test on mf mixpix",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Full user purchase journey with a MixPix Product",
+              "fullTitle": "Test on mf mixpix Full user purchase journey with a MixPix Product",
+              "timedOut": null,
+              "duration": 80970,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_mixpixLP.onMixpixLP.userOnMixpixLPAcceptsTheCokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); //3\n\n_configuratorPage.onConfiguratorPage.userOnMultiuploadConfiguratorAndClicksGoTheShoppingcartPage(); // 4 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 5 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 6 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 7 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton();",
+              "err": {},
+              "uuid": "b43e338e-4bd5-4412-8c26-fb903fe21ee9",
+              "parentUUID": "af3aca52-23f1-466a-b335-47ca5f4a4aaa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b43e338e-4bd5-4412-8c26-fb903fe21ee9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 80970,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report",
+        "reportPageTitle": "Mf automation Report",
+        "reportFilename": "[status]_[datetime]-[name]-report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

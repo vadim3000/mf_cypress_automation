@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2022-08-10T07:23:45.786Z",
-    "end": "2022-08-10T07:23:50.027Z",
-    "duration": 4241,
+    "start": "2022-08-18T11:16:47.423Z",
+    "end": "2022-08-18T11:16:51.599Z",
+    "duration": 4176,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "875d0367-35a6-45b7-98aa-9af74719e64c",
+      "uuid": "7acba876-e19d-43da-a7dc-3d51f4961269",
       "title": "",
       "fullFile": "cypress\\e2e\\mf purchase\\configuratorPage.spec.js",
       "file": "cypress\\e2e\\mf purchase\\configuratorPage.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "264123a3-847a-4904-a147-983fbf3fddac",
+          "uuid": "0ff88995-298b-4e68-95fe-9f91893e5881",
           "title": "Test on configurator page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "The user uploads an image",
               "fullTitle": "Test on configurator page The user uploads an image",
               "timedOut": null,
-              "duration": 4172,
+              "duration": 4125,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -48,11 +48,11 @@
               "code": "cy.xpath('//div[@class=\"upload-button\"]//input[@type=\"file\"]').attachFile(\"test_image_1.jpg\");\ncy.wait(2000);",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.\n    at Context.eval (http://localhost:52163/__cypress/tests?p=cypress\\e2e\\mf%20purchase\\configuratorPage.spec.js:103:8)",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.\n    at Context.eval (http://localhost:60453/__cypress/tests?p=cypress\\e2e\\mf%20purchase\\configuratorPage.spec.js:103:8)",
                 "diff": null
               },
-              "uuid": "5c12660b-22ec-403e-99ac-dbbdfa82224a",
-              "parentUUID": "264123a3-847a-4904-a147-983fbf3fddac",
+              "uuid": "09267626-f5c9-4dbf-a7c4-d70b08bbceb0",
+              "parentUUID": "0ff88995-298b-4e68-95fe-9f91893e5881",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5c12660b-22ec-403e-99ac-dbbdfa82224a"
+            "09267626-f5c9-4dbf-a7c4-d70b08bbceb0"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 4172,
+          "duration": 4125,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
