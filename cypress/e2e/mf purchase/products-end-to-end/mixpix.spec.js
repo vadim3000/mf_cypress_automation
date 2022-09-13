@@ -2,7 +2,7 @@
 /// <reference types=”cypress-xpath” />
 
 
-import {mixpixLP, onMixpixLP} from "../../../support/page_objects/Products/mixpixLP"
+import {onMixpixLP} from "../../../support/page_objects/Products/mixpixLP"
 import {onUploadImage} from "../../../support/page_objects/uploadImage";
 import {onConfiguratorPage} from "../../../support/page_objects/configuratorPage";
 import {onShoppingcartPage} from "../../../support/page_objects/shoppingcartPage";
@@ -15,10 +15,14 @@ import {onCofirmOrderPage} from "../../../support/page_objects/confirmOrderPage"
 
 describe('Test on mf mixpix', () => {
 
-    //1
-    it('Full user purchase journey with a MixPix Product', () => {
-        onMixpixLP.userOnMixpixLPAcceptsTheCokkies()
 
+    it('Full user purchase journey with a MixPix Product', () => {
+
+        // cy.viewport(320, 480)
+        // cy.viewport('iphone-x')
+
+        //1 The user on the mixPix LP page, accepts cookies and uploads an image
+        onMixpixLP.userOnMixpixLPAcceptsTheCokkies()
 
         //2 The userUpload an Image
         onUploadImage.userUploadsAnImage()
@@ -40,7 +44,7 @@ describe('Test on mf mixpix', () => {
         onPaymentMethodPage.userAddCreditCardCredentials()
 
         // // 8 The user on the confirmorder page and clicks, on the But Button
-        onCofirmOrderPage.userClicksOnTheBuyButton()
+        // onCofirmOrderPage.userClicksOnTheBuyButton()
     })
 
 

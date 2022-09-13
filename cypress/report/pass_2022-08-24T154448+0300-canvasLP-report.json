@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-08-18T11:16:31.349Z",
-    "end": "2022-08-18T11:16:42.336Z",
-    "duration": 10987,
+    "start": "2022-08-24T12:44:35.935Z",
+    "end": "2022-08-24T12:44:48.969Z",
+    "duration": 13034,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c778236c-0287-4d07-bdf8-66c560674325",
+      "uuid": "4b364cf6-dc58-409a-b110-8281bed7ac4b",
       "title": "",
       "fullFile": "cypress\\e2e\\mf purchase\\canvasLP.spec.js",
       "file": "cypress\\e2e\\mf purchase\\canvasLP.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "65daada1-8156-4c2d-829e-404650d6b40a",
+          "uuid": "8318e8e2-8562-40c1-9c6f-2597735fdc36",
           "title": "Test on Canvas LP page",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "The user on the canvas LP page, accepts cookies",
               "fullTitle": "Test on Canvas LP page The user on the canvas LP page, accepts cookies",
               "timedOut": null,
-              "duration": 8835,
+              "duration": 10425,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "// 1 The user on the canvas LP page, accepts cokkies\ncy.visit('https://www.meinfoto.de/foto-in-gross/foto-auf-leinwand.jsf');\ncy.wait(500);\ncy.xpath(\"//span[contains(text(),'Alle akzeptieren')]\").click();\ncy.wait(500);",
               "err": {},
-              "uuid": "4016ce63-f358-47ff-9c17-7f8be04261af",
-              "parentUUID": "65daada1-8156-4c2d-829e-404650d6b40a",
+              "uuid": "a9b1747f-7c4e-4eef-b178-80eb2609c4e5",
+              "parentUUID": "8318e8e2-8562-40c1-9c6f-2597735fdc36",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4016ce63-f358-47ff-9c17-7f8be04261af"
+            "a9b1747f-7c4e-4eef-b178-80eb2609c4e5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8835,
+          "duration": 10425,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

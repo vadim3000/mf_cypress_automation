@@ -23,7 +23,7 @@ describe('Test on mf canvas', () =>  {
     it('Full user purchase journey with a Canvas Product', () => {
 
         context("1 step", ()=>{
-            // 1 The user on the canvas LP page, accepts cokkies and uplaod an image
+            // 1 The user on the canvas LP page,  accepts cookies and uploads an image
             onCanvasLp.userOnCanvasLPAccreptsThecokkies()
 
             //2 The userUpload an Image
@@ -47,6 +47,6 @@ describe('Test on mf canvas', () =>  {
         onPaymentMethodPage.userAddCreditCardCredentials()
 
         // // 8 The user on the confirmorder page and clicks, on the But Button
-        onCofirmOrderPage.userClicksOnTheBuyButton()
+        // onCofirmOrderPage.userClicksOnTheBuyButton()
     })
 })

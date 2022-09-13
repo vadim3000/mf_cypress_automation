@@ -5,8 +5,10 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
 
   projectId: "jbgiu1",
-  viewportHeight: 1080,
-  viewportWidth: 1920,
+  viewportHeight: 1920,
+  viewportWidth: 1080,
+  viewport:'iphone-5',
+
   blockHosts: [
     "*google-analytics.com",
     "*googletagmanager.com",

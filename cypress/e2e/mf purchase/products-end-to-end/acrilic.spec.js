@@ -22,7 +22,7 @@ describe('Test on mf acrilic', () =>  {
 
     it('Full user purchase journey with a Acrilic Product', () => {
 
-        // // 1 The user on the canvas LP page, accepts cokkies and uploads an image
+        // // 1 The user on the canvas LP page,  accepts cookies and uploads an image
         onAcrilicLP.userOnAcrilicLPAccreptsThecokkies()
 
         //2 The userUpload an Image

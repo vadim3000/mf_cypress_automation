@@ -22,7 +22,7 @@ describe('Test on mf aludibond', () =>  {
 
     it('Full user purchase journey with a AluDibond Product', () => {
 
-        // 1 The user on the aludibond LP page, accepts cokkies and uplaod an image
+        // 1 The user on the aludibond LP page,  accepts cookies and uploads an image
        onAludibondLP.userOnAludibondLPAccreptsThecokkies()
 
         //2 The userUpload an Image
