@@ -14,7 +14,8 @@
     "posttest": "npm run merge-reports && npm run generate-htmlreport",
     "sayHello": "echo Hello World ...!",
     "merge-reports": "mochawesome-merge ./cypress/report/*.json > ./report1.json",
-    "generate-htmlreport": "marge ./report1.json --reportDir ./cypress/report"
+    "generate-htmlreport": "marge ./report1.json --reportDir ./cypress/report",
+    "cypress:browserstack": "browserstack-cypress run"
   },
   "keywords": [],
   "author": "",

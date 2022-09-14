@@ -7,7 +7,7 @@ module.exports = defineConfig({
   projectId: "jbgiu1",
   viewportHeight: 1920,
   viewportWidth: 1080,
-  viewport:'iphone-5',
+  // viewport:'iphone-5',
 
   blockHosts: [
     "*google-analytics.com",
