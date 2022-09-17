@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
+    "browserstack-cypress-cli": "^1.18.0",
     "cypress": "^10.3.1",
     "cypress-rollup-preprocessor": "^1.2.0",
     "npm-run-all": "^4.1.5",
