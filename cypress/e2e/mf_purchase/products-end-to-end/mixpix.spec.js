@@ -1,7 +1,6 @@
 /// <reference types="cypress"/>
 /// <reference types=”cypress-xpath” />
 
-
 import {onMixpixLP} from "../../../support/page_objects/Products/mixpixLP"
 import {onUploadImage} from "../../../support/page_objects/uploadImage";
 import {onConfiguratorPage} from "../../../support/page_objects/configuratorPage";
@@ -12,12 +11,11 @@ import {onPaymentMethodPage} from "../../../support/page_objects/paymentMethodPa
 import {onCofirmOrderPage} from "../../../support/page_objects/confirmOrderPage";
 
 
-
 describe('Test on mf mixpix', () => {
 
-    // beforeEach('open homepage', ()=> {
-    //     cy.openHomePage()
-    // })
+    beforeEach('open homepage', ()=> {
+        cy.openHomePage()
+    })
 
     it('Full user purchase journey with a MixPix Product', () => {
 

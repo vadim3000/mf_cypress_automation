@@ -22,7 +22,7 @@ export class PaymentMethodPage{
         cy.get('input[placeholder=" Kartenprüfnummer"]')
             .type("737")
 
-        cy.wait(2000)
+        cy.wait(1000)
         cy.get('button[type="button"]')
             .contains('Weiter')
             .click()

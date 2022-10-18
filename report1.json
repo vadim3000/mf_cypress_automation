@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 6,
-    "tests": 6,
-    "passes": 5,
+    "suites": 7,
+    "tests": 7,
+    "passes": 3,
     "pending": 0,
-    "failures": 1,
-    "start": "2022-08-24T12:44:35.935Z",
-    "end": "2022-08-24T12:49:57.977Z",
-    "duration": 261027,
-    "testsRegistered": 6,
-    "passPercent": 83.33333333333333,
+    "failures": 4,
+    "start": "2022-10-03T07:40:43.648Z",
+    "end": "2022-10-03T07:49:47.274Z",
+    "duration": 408829,
+    "testsRegistered": 7,
+    "passPercent": 42.857142857142854,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "b9f9d0dd-d108-42ff-bf1d-1ad038cdc7b9",
+      "uuid": "f58b7b79-2625-46e2-b071-1af0d393b4f0",
       "title": "",
-      "fullFile": "cypress\\e2e\\mf purchase\\configuratorPage.spec.js",
-      "file": "cypress\\e2e\\mf purchase\\configuratorPage.spec.js",
+      "fullFile": "cypress\\e2e\\mf_purchase\\configuratorPage.spec.js",
+      "file": "cypress\\e2e\\mf_purchase\\configuratorPage.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "8ea5b42d-f164-46e8-8e6f-ac38fb6c93aa",
+          "uuid": "c85129c8-1442-4292-9c8a-a699bd0e689a",
           "title": "Test on configurator page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "The user uploads an image",
               "fullTitle": "Test on configurator page The user uploads an image",
               "timedOut": null,
-              "duration": 4135,
+              "duration": 4138,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -48,11 +48,11 @@
               "code": "cy.xpath('//div[@class=\"upload-button\"]//input[@type=\"file\"]').attachFile(\"test_image_1.jpg\");\ncy.wait(2000);",
               "err": {
                 "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.\n    at Context.eval (http://localhost:63534/__cypress/tests?p=cypress\\e2e\\mf%20purchase\\configuratorPage.spec.js:103:8)",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `//div[@class=\"upload-button\"]//input[@type=\"file\"]`, but never found it.\n    at Context.eval (http://localhost:59173/__cypress/tests?p=cypress\\e2e\\mf_purchase\\configuratorPage.spec.js:103:8)",
                 "diff": null
               },
-              "uuid": "50759ebf-0527-4a52-9797-9891792bfbf5",
-              "parentUUID": "8ea5b42d-f164-46e8-8e6f-ac38fb6c93aa",
+              "uuid": "41978e8f-d34e-4ceb-b8a0-848f8b2e4f17",
+              "parentUUID": "c85129c8-1442-4292-9c8a-a699bd0e689a",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "50759ebf-0527-4a52-9797-9891792bfbf5"
+            "41978e8f-d34e-4ceb-b8a0-848f8b2e4f17"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 4135,
+          "duration": 4138,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -80,132 +80,16 @@
       "_timeout": 2000
     },
     {
-      "uuid": "4b364cf6-dc58-409a-b110-8281bed7ac4b",
+      "uuid": "4ea133b3-c3b1-4adf-8285-14ec40079c8a",
       "title": "",
-      "fullFile": "cypress\\e2e\\mf purchase\\canvasLP.spec.js",
-      "file": "cypress\\e2e\\mf purchase\\canvasLP.spec.js",
+      "fullFile": "cypress\\e2e\\mf_purchase\\products-end-to-end\\aludibond.spec.js",
+      "file": "cypress\\e2e\\mf_purchase\\products-end-to-end\\aludibond.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "8318e8e2-8562-40c1-9c6f-2597735fdc36",
-          "title": "Test on Canvas LP page",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "The user on the canvas LP page, accepts cookies",
-              "fullTitle": "Test on Canvas LP page The user on the canvas LP page, accepts cookies",
-              "timedOut": null,
-              "duration": 10425,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "// 1 The user on the canvas LP page, accepts cokkies\ncy.visit('https://www.meinfoto.de/foto-in-gross/foto-auf-leinwand.jsf');\ncy.wait(500);\ncy.xpath(\"//span[contains(text(),'Alle akzeptieren')]\").click();\ncy.wait(500);",
-              "err": {},
-              "uuid": "a9b1747f-7c4e-4eef-b178-80eb2609c4e5",
-              "parentUUID": "8318e8e2-8562-40c1-9c6f-2597735fdc36",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "a9b1747f-7c4e-4eef-b178-80eb2609c4e5"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 10425,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "424c948c-6d46-43af-b1e2-146c79c56ddb",
-      "title": "",
-      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\acrilic.spec.js",
-      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\acrilic.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "ede0991c-7826-4889-ade6-3d0dd03bcbc6",
-          "title": "Test on mf acrilic",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "Full user purchase journey with a Acrilic Product",
-              "fullTitle": "Test on mf acrilic Full user purchase journey with a Acrilic Product",
-              "timedOut": null,
-              "duration": 68398,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "// // 1 The user on the canvas LP page, accepts cokkies and uploads an image\n_acrilicLP.onAcrilicLP.userOnAcrilicLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // 8 The user on the confirmorder page and clicks, on the But Button\n// onCofirmOrderPage.userClicksOnTheBuyButton()",
-              "err": {},
-              "uuid": "3162383f-2e12-4d8e-89b5-8d4d7d55ca51",
-              "parentUUID": "ede0991c-7826-4889-ade6-3d0dd03bcbc6",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "3162383f-2e12-4d8e-89b5-8d4d7d55ca51"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 68398,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    },
-    {
-      "uuid": "ae88787f-1437-4f61-8ffe-dfdf835b66c1",
-      "title": "",
-      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\aludibond.spec.js",
-      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\aludibond.spec.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "961901aa-988e-4cfa-8ca1-ab17b0d5886d",
+          "uuid": "6a94878e-42fc-4652-8464-a41c974391c7",
           "title": "Test on mf aludibond",
           "fullFile": "",
           "file": "",
@@ -216,29 +100,33 @@
               "title": "Full user purchase journey with a AluDibond Product",
               "fullTitle": "Test on mf aludibond Full user purchase journey with a AluDibond Product",
               "timedOut": null,
-              "duration": 55725,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 77658,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
-              "code": "// 1 The user on the aludibond LP page, accepts cokkies and uplaod an image\n_aludibondLP.onAludibondLP.userOnAludibondLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton();",
-              "err": {},
-              "uuid": "3aed33f2-b90b-4eb0-adcd-805b2f524588",
-              "parentUUID": "961901aa-988e-4cfa-8ca1-ab17b0d5886d",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\products-end-to-end\\\\aludibond.spec.js\\\\Test on mf aludibond -- Full user purchase journey with a AluDibond Product (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "// 1 The user on the aludibond LP page,  accepts cookies and uploads an image\n_aludibondLP.onAludibondLP.userOnAludibondLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton();",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'addEventListener')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'addEventListener')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at https://www.meinfoto.de/static/build/js/ux-checkout-success-story-3fc-598c527026.min.js:1:17956",
+                "diff": null
+              },
+              "uuid": "3a13c43e-0802-4a17-a6a0-9f2c65e11cfb",
+              "parentUUID": "6a94878e-42fc-4652-8464-a41c974391c7",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "3aed33f2-b90b-4eb0-adcd-805b2f524588"
+          "passes": [],
+          "failures": [
+            "3a13c43e-0802-4a17-a6a0-9f2c65e11cfb"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 55725,
+          "duration": 77658,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -254,16 +142,16 @@
       "_timeout": 2000
     },
     {
-      "uuid": "2ce58c7f-f787-4439-b3fe-ff41a737a52d",
+      "uuid": "60a2eb6b-bb5e-4e74-a951-4c9e68a40ec6",
       "title": "",
-      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\canvas.spec.js",
-      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\canvas.spec.js",
+      "fullFile": "cypress\\e2e\\mf_purchase\\products-end-to-end\\canvas.spec.js",
+      "file": "cypress\\e2e\\mf_purchase\\products-end-to-end\\canvas.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "eb5e58a2-0d03-46b1-9449-1bc00349fd09",
+          "uuid": "3923cd30-60dc-480b-9424-5e2f9e95fb02",
           "title": "Test on mf canvas",
           "fullFile": "",
           "file": "",
@@ -274,29 +162,33 @@
               "title": "Full user purchase journey with a Canvas Product",
               "fullTitle": "Test on mf canvas Full user purchase journey with a Canvas Product",
               "timedOut": null,
-              "duration": 62801,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 77914,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
-              "code": "context(\"1 step\", () => {\n  // 1 The user on the canvas LP page, accepts cokkies and uplaod an image\n  _canvasLP.onCanvasLp.userOnCanvasLPAccreptsThecokkies(); //2 The userUpload an Image\n\n  _uploadImage.onUploadImage.userUploadsAnImage();\n}); // 3 The user uploads an image\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton();",
-              "err": {},
-              "uuid": "e614153c-5011-4647-9355-58597fef3e4b",
-              "parentUUID": "eb5e58a2-0d03-46b1-9449-1bc00349fd09",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\products-end-to-end\\\\canvas.spec.js\\\\Test on mf canvas -- Full user purchase journey with a Canvas Product (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "context(\"1 step\", () => {\n  // 1 The user on the canvas LP page,  accepts cookies and uploads an image\n  _canvasLP.onCanvasLp.userOnCanvasLPAccreptsThecokkies(); //2 The userUpload an Image\n\n  _uploadImage.onUploadImage.userUploadsAnImage();\n}); // 3 The user uploads an image\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // 7 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton(); // 8 The user on the ordersuccess page,\n\n_ordersuccessPage.onOrderSuccessPage.saveOrderNumber();",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'addEventListener')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'addEventListener')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at https://www.meinfoto.de/static/build/js/ux-checkout-success-story-3fc-598c527026.min.js:1:17956",
+                "diff": null
+              },
+              "uuid": "0ae02cb8-3118-4f98-81ad-d3190ff9fdf2",
+              "parentUUID": "3923cd30-60dc-480b-9424-5e2f9e95fb02",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [
-            "e614153c-5011-4647-9355-58597fef3e4b"
+          "passes": [],
+          "failures": [
+            "0ae02cb8-3118-4f98-81ad-d3190ff9fdf2"
           ],
-          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 62801,
+          "duration": 77914,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -312,16 +204,16 @@
       "_timeout": 2000
     },
     {
-      "uuid": "e0d560b2-f0b2-4fd6-86c0-508983a1a3e8",
+      "uuid": "82be5223-2abc-4546-8b92-6193f332fac7",
       "title": "",
-      "fullFile": "cypress\\e2e\\mf purchase\\products-end-to-end\\mixpix.spec.js",
-      "file": "cypress\\e2e\\mf purchase\\products-end-to-end\\mixpix.spec.js",
+      "fullFile": "cypress\\e2e\\mf_purchase\\products-end-to-end\\mixpix.spec.js",
+      "file": "cypress\\e2e\\mf_purchase\\products-end-to-end\\mixpix.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "efea971d-2af7-4961-a143-3e967f62b57c",
+          "uuid": "f72cfa93-4ab1-496c-b3f5-16828b0c2211",
           "title": "Test on mf mixpix",
           "fullFile": "",
           "file": "",
@@ -332,29 +224,207 @@
               "title": "Full user purchase journey with a MixPix Product",
               "fullTitle": "Test on mf mixpix Full user purchase journey with a MixPix Product",
               "timedOut": null,
-              "duration": 59543,
+              "duration": 163175,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\products-end-to-end\\\\mixpix.spec.js\\\\Test on mf mixpix -- Full user purchase journey with a MixPix Product (failed).png\"\n      }\n    ]\n  ]\n}",
+              "code": "// cy.viewport(320, 480)\n// cy.viewport('iphone-x')\n//1 The user on the mixPix LP page, accepts cookies and uploads an image\n_mixpixLP.onMixpixLP.userOnMixpixLPAcceptsTheCokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); //3\n\n_configuratorPage.onConfiguratorPage.userOnMultiuploadConfiguratorAndClicksGoTheShoppingcartPage(); // 4 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 5 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 6 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 7 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // 8 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton();",
+              "err": {
+                "message": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'addEventListener')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application",
+                "estack": "TypeError: The following error originated from your application code, not from Cypress.\n\n  > Cannot read properties of null (reading 'addEventListener')\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\n\nhttps://on.cypress.io/uncaught-exception-from-application\n    at https://www.meinfoto.de/static/build/js/ux-checkout-success-story-3fc-598c527026.min.js:1:17956",
+                "diff": null
+              },
+              "uuid": "94e48225-d73a-43a0-9765-df920775a91b",
+              "parentUUID": "f72cfa93-4ab1-496c-b3f5-16828b0c2211",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "94e48225-d73a-43a0-9765-df920775a91b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 163175,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c4001a46-041b-4f70-b7a1-ab2f2ac072d8",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mf_purchase\\canvasLP.spec.js",
+      "file": "cypress\\e2e\\mf_purchase\\canvasLP.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "abf3b955-8ddf-4333-876b-6945f8babbab",
+          "title": "Test on Canvas LP page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "The user on the canvas LP page, accepts cookies",
+              "fullTitle": "Test on Canvas LP page The user on the canvas LP page, accepts cookies",
+              "timedOut": null,
+              "duration": 8282,
               "state": "passed",
-              "speed": "slow",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
-              "code": "_mixpixLP.onMixpixLP.userOnMixpixLPAcceptsTheCokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); //3\n\n_configuratorPage.onConfiguratorPage.userOnMultiuploadConfiguratorAndClicksGoTheShoppingcartPage(); // 4 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 5 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 6 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 7 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // // 8 The user on the confirmorder page and clicks, on the But Button\n\n_confirmOrderPage.onCofirmOrderPage.userClicksOnTheBuyButton();",
+              "code": "// 1 The user on the canvas LP page, accepts cokkies\ncy.visit('https://www.meinfoto.de/foto-in-gross/foto-auf-leinwand.jsf');\ncy.wait(500);\ncy.xpath(\"//span[contains(text(),'Alle akzeptieren')]\").click();\ncy.wait(500);",
               "err": {},
-              "uuid": "cc06464a-2c46-4889-ad20-f421977a6126",
-              "parentUUID": "efea971d-2af7-4961-a143-3e967f62b57c",
+              "uuid": "eea3c7f1-2585-4838-9075-ec22bf567e96",
+              "parentUUID": "abf3b955-8ddf-4333-876b-6945f8babbab",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cc06464a-2c46-4889-ad20-f421977a6126"
+            "eea3c7f1-2585-4838-9075-ec22bf567e96"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 59543,
+          "duration": 8282,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f4add972-a9ad-40d3-bce7-91adb6f0b8bb",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mf_purchase\\products-end-to-end\\acrilic.spec.js",
+      "file": "cypress\\e2e\\mf_purchase\\products-end-to-end\\acrilic.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "717ff26d-d398-4692-a946-1de40e69547b",
+          "title": "Test on mf acrilic",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Full user purchase journey with a Acrilic Product",
+              "fullTitle": "Test on mf acrilic Full user purchase journey with a Acrilic Product",
+              "timedOut": null,
+              "duration": 66295,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// // 1 The user on the canvas LP page,  accepts cookies and uploads an image\n_acrilicLP.onAcrilicLP.userOnAcrilicLPAccreptsThecokkies(); //2 The userUpload an Image\n\n_uploadImage.onUploadImage.userUploadsAnImage(); // 3 The user uploads an image\n\n_configuratorPage.onConfiguratorPage.userClicksOnTheGoTheShoppingcartPage(); // 3 The user on shoppingcaret page, and goes to the LoginCheckout page\n\n_shoppingcartPage.onShoppingcartPage.clickToTheContinueButton(); // 4 The user on  LoginCheckout page and goes to the checkout page\n\n_loginCheckoutPage.onLoginCheckoutPage.clickToTheContinueToCheckoutBtn(); // 5 The user on the Checkout page add his data\n\n_checkoutPage.onCheckoutPage.addUserValidData(); // 6 The user adds credit card data\n\n_paymentMethodPage.onPaymentMethodPage.userAddCreditCardCredentials(); // 8 The user on the confirmorder page and clicks, on the But Button\n// onCofirmOrderPage.userClicksOnTheBuyButton()",
+              "err": {},
+              "uuid": "d79c3337-1838-4dbc-979a-43308e3c3537",
+              "parentUUID": "717ff26d-d398-4692-a946-1de40e69547b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d79c3337-1838-4dbc-979a-43308e3c3537"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66295,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d06a0cfb-f45b-489f-81b2-172594c5a341",
+      "title": "",
+      "fullFile": "cypress\\e2e\\mf_purchase\\products-end-to-end\\point.js",
+      "file": "cypress\\e2e\\mf_purchase\\products-end-to-end\\point.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f57926e6-d6be-4135-b849-b64200d2533b",
+          "title": "Point Md",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "The user on the canvas LP page, accepts cookies",
+              "fullTitle": "Point Md The user on the canvas LP page, accepts cookies",
+              "timedOut": null,
+              "duration": 11367,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// 1 The user on the canvas LP page, accepts cokkies\ncy.visit('https://point.md/ru/');\ncy.get('.zvvotu-6.cEwXxo').invoke('text').then(text => {\n  cy.writeFile('path/to/data.json', {\n    text\n  });\n}); // cy.writeFile('path/to/data.json',{title})\n// cy.readFile('path/to/data.json').then((testOrder) => {\n//     expect(testOrder.title).to.equal('MFA19907009377')\n// })",
+              "err": {},
+              "uuid": "009f87d8-d056-4ebe-8ff2-4aed09bf9b79",
+              "parentUUID": "f57926e6-d6be-4135-b849-b64200d2533b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "009f87d8-d056-4ebe-8ff2-4aed09bf9b79"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11367,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

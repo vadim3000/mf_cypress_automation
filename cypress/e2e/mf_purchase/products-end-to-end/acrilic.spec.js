@@ -12,13 +12,9 @@ import {onAcrilicLP} from "../../../support/page_objects/Products/acrilicLP";
 
 describe('Test on mf acrilic', () =>  {
 
-    // beforeEach('open homepage', ()=> {
-    //     cy.openHomePage()
-    // })
-
-    // afterEach('close site', () =>{
-    //     close()
-    // })
+    beforeEach('open homepage', ()=> {
+        cy.openHomePage()
+    })
 
     it('Full user purchase journey with a Acrilic Product', () => {
 

@@ -8,12 +8,14 @@ import {onPaymentMethodPage} from "../../../support/page_objects/paymentMethodPa
 import {onConfiguratorPage} from "../../../support/page_objects/configuratorPage";
 import {onUploadImage} from "../../../support/page_objects/uploadImage";
 import {onCanvasLp} from "../../../support/page_objects/Products/canvasLP";
+import {onCofirmOrderPage} from "../../../support/page_objects/confirmOrderPage";
+import {onOrderSuccessPage} from "../../../support/page_objects/ordersuccessPage";
 
 describe('Test on mf canvas', () =>  {
 
-    // beforeEach('open homepage', ()=> {
-    //     cy.openHomePage()
-    // })
+    beforeEach('open homepage', ()=> {
+        cy.openHomePage()
+    })
 
     it('Full user purchase journey with a Canvas Product', () => {
 
@@ -41,7 +43,12 @@ describe('Test on mf canvas', () =>  {
         // 6 The user adds credit card data
         onPaymentMethodPage.userAddCreditCardCredentials()
 
-        // // 8 The user on the confirmorder page and clicks, on the But Button
-        // onCofirmOrderPage.userClicksOnTheBuyButton()
+        // 7 The user on the confirmorder page and clicks, on the But Button
+        onCofirmOrderPage.userClicksOnTheBuyButton()
+
+        // 8 The user on the ordersuccess page,
+        onOrderSuccessPage.saveOrderNumber()
+
+
     })
 })

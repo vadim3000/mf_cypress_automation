@@ -12,13 +12,9 @@ import {onAludibondLP} from "../../../support/page_objects/Products/aludibondLP"
 
 describe('Test on mf aludibond', () =>  {
 
-    // beforeEach('open homepage', ()=> {
-    //     cy.openHomePage()
-    // })
-
-    // afterEach('close site', () =>{
-    //     close()
-    // })
+    beforeEach('open homepage', ()=> {
+        cy.openHomePage()
+    })
 
     it('Full user purchase journey with a AluDibond Product', () => {
 

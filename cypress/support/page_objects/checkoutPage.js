@@ -25,7 +25,7 @@ export class CheckoutPage{
         cy.get('[name="checkoutForm:invoicePhoneNumber"]')
            .type("123456789")
 
-        cy.wait(2000)
+        cy.wait(1000)
         cy.get('[name="checkoutForm:saveInvoice"]')
             .click()
     }
